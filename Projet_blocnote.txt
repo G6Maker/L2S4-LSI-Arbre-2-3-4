@@ -1,0 +1,41 @@
+Projet LSI
+question 1:
+	1. voir code type d'ab234, c'est ce qui me paraissait le plus symple et evident a faire
+	2. voir code est_ab234, d'apres ce qu'on a vue en TP
+	3. Voir code est_dans234, d'apres le cours de TP, reprise de la meme base et idée.
+Question 2:
+	1. les cas de transformation de la figure 2 convertissent bien un arbre234 en arbre bicolore, parce que cette arbre est toujours un arbre de recherche maais il est egalement impossible d'avoir deux rouge de suite. De plus comme les arbre234 ont obligatoirement toutes les feuilles sur un meme niveau cela veux forcement dire que la hauteur noir des arbre bicolore est respecté
+	2. Idem, les transformation respecte les regles est arbre234
+	3. Voir code des deux fonxtion cité.
+Question 3:
+	1. etude de la correction, et determination de la complexité.
+	2. Voir code fonction equilibrer et inserer.
+	3. Voir code de la fonction random_ab234, reprise de la fonction vu en cours.
+Question 4:
+	1. algorithme de suppression de valeurs pour un arbre_234:
+	supp_ab234 v, a:
+		a = equilibrer_sup_rac(a)
+		SI a = Vide ALORS
+			Vide
+		SINON
+		SI v est pas dans la racine de a et le sous arbre de a visé n'est pas equilibrer ALORS
+			supp_ab234(v, equilibrer_supp (a))
+		SINON
+		SI v n'est pas dans la racine de a et que le sous arbre visé es>
+                        supp_ab234(v, sous arbre visé de (a))
+                SINON 
+		SI a est une feuille et que v est dans a ALORS
+			supression de v dans A
+		SINON
+		SI v est dans la racine de a ET le sous arbre est equilibrer ALORS
+			descente de v dans le sous arbre a ça gauche immediate et remonté de la plus grande valeur du sous arbre de a à la place de v. Puis supp_ab234(sous arbre visé de a)  
+		SINON
+		SI v est dans la racine de a ET le sous arbre visé est pas equilibrer ALORS
+			supp_ab234(v, equilibrer_supp (a))
+		FIN SI
+	possibilité de elever des lignes en regroupant les cas d'equilibrage.
+	2. Etudier la correction et la complexité de l'algorithme.
+	3. Voir code supp_ab234, equilibrer_supp_rac, equilibrer_supp.
+
+Question 5.
+	
